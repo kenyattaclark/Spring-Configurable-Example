@@ -10,6 +10,11 @@
 		to inject dependencies into classes not instantiated by Spring.
 	</description>
 
+	<properties>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  	</properties>
+
 	<developers>
 		<developer>
 			<id>kclark</id>
@@ -27,15 +32,7 @@
 			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
 		</license>
 	</licenses>
-	
-	<repositories>
-		<repository>
-			<id>spring-maven-release</id>
-			<name>Spring Maven Release Repository</name>
-			<url>http://maven.springframework.org/release</url>
-		</repository>
-	</repositories>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -48,19 +45,14 @@
 			<version>3.0.5.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-transaction</artifactId>
-			<version>3.0.5.RELEASE</version>
-		</dependency>
-		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjrt</artifactId>
-			<version>1.6.1</version>
+			<version>1.6.10</version>
 		</dependency>
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
-			<version>1.6.1</version>
+			<version>1.6.10</version>
 		</dependency>
 	</dependencies>
 
@@ -80,12 +72,12 @@
                 <artifactId>aspectj-maven-plugin</artifactId>
                 <configuration>
                     <complianceLevel>1.6</complianceLevel>
-                    <aspectLibraries>
-                        <aspectLibrary>
-                            <groupId>org.springframework</groupId>
-                            <artifactId>spring-aspects</artifactId>
-                        </aspectLibrary>
-                    </aspectLibraries>
+<!--                     <aspectLibraries> -->
+<!--                         <aspectLibrary> -->
+<!--                             <groupId>org.springframework</groupId> -->
+<!--                             <artifactId>spring-aspects</artifactId> -->
+<!--                         </aspectLibrary> -->
+<!--                     </aspectLibraries> -->
                 </configuration>
                 <executions>
                     <execution>
