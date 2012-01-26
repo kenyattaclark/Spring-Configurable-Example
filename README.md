@@ -7,5 +7,5 @@ This implementation requires Maven to perform compile time weaving.
 
 To run from the command line using Maven:
 
-1. 'mvn clean compile'
-2. 'mvn exec:java -Dexec.mainClass="com.brightdome.sample.spring.HelloWorld"'
+1. `mvn clean compile`
+2. `mvn exec:java -Dexec.mainClass="com.brightdome.sample.spring.HelloWorld"`
