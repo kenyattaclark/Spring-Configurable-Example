@@ -7,9 +7,10 @@ import org.springframework.beans.factory.annotation.Configurable;
 public class HelloWorldClient {
 	
 	@Autowired
-	HelloWorldService service;
+	private HelloWorldService service;
 	
 	public void sayHello() {
+		// Used injected instance of service
 		service.sayHello();
 	}
 }
