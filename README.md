@@ -1,6 +1,3 @@
-Read Me
-======
-
 Sample project to show how to work with Spring's @Configurable capability to inject dependencies into classes not instantiated by Spring.
 
 This implementation requires Maven to perform compile time weaving.
